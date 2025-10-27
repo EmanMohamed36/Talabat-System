@@ -1,0 +1,17 @@
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\bin\Debug\net8.0\PresentationLayer.deps.json
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\bin\Debug\net8.0\PresentationLayer.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\bin\Debug\net8.0\PresentationLayer.pdb
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\bin\Debug\net8.0\ServiceAbstractionLayer.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\bin\Debug\net8.0\Shared.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\bin\Debug\net8.0\ServiceAbstractionLayer.pdb
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\bin\Debug\net8.0\Shared.pdb
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\obj\Debug\net8.0\PresentationLayer.csproj.AssemblyReference.cache
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\obj\Debug\net8.0\PresentationLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\obj\Debug\net8.0\PresentationLayer.AssemblyInfoInputs.cache
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\obj\Debug\net8.0\PresentationLayer.AssemblyInfo.cs
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\obj\Debug\net8.0\PresentationLayer.csproj.CoreCompileInputs.cache
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\obj\Debug\net8.0\Presenta.9C561136.Up2Date
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\obj\Debug\net8.0\PresentationLayer.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\obj\Debug\net8.0\refint\PresentationLayer.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\obj\Debug\net8.0\PresentationLayer.pdb
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\InfraStructure\PresentationLayer\obj\Debug\net8.0\ref\PresentationLayer.dll

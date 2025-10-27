@@ -1,0 +1,428 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\infrastructure\\persistence\\dataseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|solutionrelative:infrastructure\\persistence\\dataseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DF1967-77D7-435C-8425-142544E32AF8}|Core\\DomainLayer\\DomainLayer.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\core\\domainlayer\\contracts\\idataseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1DF1967-77D7-435C-8425-142544E32AF8}|Core\\DomainLayer\\DomainLayer.csproj|solutionrelative:core\\domainlayer\\contracts\\idataseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\talabatsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|solutionrelative:talabatsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\infrastructure\\persistence\\data\\dataseed\\delivery.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|solutionrelative:infrastructure\\persistence\\data\\dataseed\\delivery.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\infrastructure\\persistence\\data\\dataseed\\brands.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|solutionrelative:infrastructure\\persistence\\data\\dataseed\\brands.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\Migrations\\20251027205704_intialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:InfraStructure\\Persistence\\Data\\Migrations\\20251027205704_intialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\talabatsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|solutionrelative:talabatsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\talabatsystem\\talabatsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|solutionrelative:talabatsystem\\talabatsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\Migrations\\20251027205431_intialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:InfraStructure\\Persistence\\Data\\Migrations\\20251027205431_intialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DF1967-77D7-435C-8425-142544E32AF8}|Core\\DomainLayer\\DomainLayer.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\core\\domainlayer\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1DF1967-77D7-435C-8425-142544E32AF8}|Core\\DomainLayer\\DomainLayer.csproj|solutionrelative:core\\domainlayer\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DF1967-77D7-435C-8425-142544E32AF8}|Core\\DomainLayer\\DomainLayer.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\core\\domainlayer\\models\\productbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1DF1967-77D7-435C-8425-142544E32AF8}|Core\\DomainLayer\\DomainLayer.csproj|solutionrelative:core\\domainlayer\\models\\productbrand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DF1967-77D7-435C-8425-142544E32AF8}|Core\\DomainLayer\\DomainLayer.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\core\\domainlayer\\models\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1DF1967-77D7-435C-8425-142544E32AF8}|Core\\DomainLayer\\DomainLayer.csproj|solutionrelative:core\\domainlayer\\models\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\infrastructure\\persistence\\data\\configurations\\productconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|solutionrelative:infrastructure\\persistence\\data\\configurations\\productconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\infrastructure\\persistence\\data\\storedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|solutionrelative:infrastructure\\persistence\\data\\storedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DF1967-77D7-435C-8425-142544E32AF8}|Core\\DomainLayer\\DomainLayer.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\core\\domainlayer\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1DF1967-77D7-435C-8425-142544E32AF8}|Core\\DomainLayer\\DomainLayer.csproj|solutionrelative:core\\domainlayer\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\infrastructure\\persistence\\persistencelayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|solutionrelative:infrastructure\\persistence\\persistencelayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C440DBE-2885-439A-83E8-94E96E019C67}|Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\core\\serviceabstractionlayer\\serviceabstractionlayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1C440DBE-2885-439A-83E8-94E96E019C67}|Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj|solutionrelative:core\\serviceabstractionlayer\\serviceabstractionlayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFBFEB11-AEA4-44E8-9C3D-986E0E67AE11}|Core\\ServiceLayer\\ServiceLayer.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\core\\servicelayer\\servicelayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DFBFEB11-AEA4-44E8-9C3D-986E0E67AE11}|Core\\ServiceLayer\\ServiceLayer.csproj|solutionrelative:core\\servicelayer\\servicelayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\talabatsystem\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|solutionrelative:talabatsystem\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\talabatsystem\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|solutionrelative:talabatsystem\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\talabatsystem\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|solutionrelative:talabatsystem\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\talabatsystem\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|solutionrelative:talabatsystem\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\talabatsystem\\talabatsystem.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|solutionrelative:talabatsystem\\talabatsystem.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|f:\\routeacademayversion02\\apis\\talabatsystem\\talabatsystem\\talabatsystem\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|solutionrelative:talabatsystem\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "delivery.json",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\DataSeed\\delivery.json",
+              "RelativeDocumentMoniker": "InfraStructure\\Persistence\\Data\\DataSeed\\delivery.json",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\DataSeed\\delivery.json",
+              "RelativeToolTip": "InfraStructure\\Persistence\\Data\\DataSeed\\delivery.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-27T22:10:13.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "brands.json",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\DataSeed\\brands.json",
+              "RelativeDocumentMoniker": "InfraStructure\\Persistence\\Data\\DataSeed\\brands.json",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\DataSeed\\brands.json",
+              "RelativeToolTip": "InfraStructure\\Persistence\\Data\\DataSeed\\brands.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-27T22:10:10.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IDataSeeding.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\Contracts\\IDataSeeding.cs",
+              "RelativeDocumentMoniker": "Core\\DomainLayer\\Contracts\\IDataSeeding.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\Contracts\\IDataSeeding.cs",
+              "RelativeToolTip": "Core\\DomainLayer\\Contracts\\IDataSeeding.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T21:31:28.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataSeeding.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\DataSeeding.cs",
+              "RelativeDocumentMoniker": "InfraStructure\\Persistence\\DataSeeding.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\DataSeeding.cs",
+              "RelativeToolTip": "InfraStructure\\Persistence\\DataSeeding.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T21:27:48.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20251027205704_intialCreate.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\Migrations\\20251027205704_intialCreate.cs",
+              "RelativeDocumentMoniker": "InfraStructure\\Persistence\\Data\\Migrations\\20251027205704_intialCreate.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\Migrations\\20251027205704_intialCreate.cs",
+              "RelativeToolTip": "InfraStructure\\Persistence\\Data\\Migrations\\20251027205704_intialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T20:57:04.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20251027205431_intialCreate.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\Migrations\\20251027205431_intialCreate.cs",
+              "RelativeDocumentMoniker": "InfraStructure\\Persistence\\Data\\Migrations\\20251027205431_intialCreate.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\Migrations\\20251027205431_intialCreate.cs",
+              "RelativeToolTip": "InfraStructure\\Persistence\\Data\\Migrations\\20251027205431_intialCreate.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T20:54:32.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductConfigurations.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\Configurations\\ProductConfigurations.cs",
+              "RelativeDocumentMoniker": "InfraStructure\\Persistence\\Data\\Configurations\\ProductConfigurations.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\Configurations\\ProductConfigurations.cs",
+              "RelativeToolTip": "InfraStructure\\Persistence\\Data\\Configurations\\ProductConfigurations.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T20:30:33.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "TalabatSystem\\appsettings.json",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\appsettings.json",
+              "RelativeToolTip": "TalabatSystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-27T20:26:29.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StoreDbContext.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\StoreDbContext.cs",
+              "RelativeDocumentMoniker": "InfraStructure\\Persistence\\Data\\StoreDbContext.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\Data\\StoreDbContext.cs",
+              "RelativeToolTip": "InfraStructure\\Persistence\\Data\\StoreDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T20:18:05.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Core\\DomainLayer\\Models\\BaseEntity.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "Core\\DomainLayer\\Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T19:22:01.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductType.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\Models\\ProductType.cs",
+              "RelativeDocumentMoniker": "Core\\DomainLayer\\Models\\ProductType.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\Models\\ProductType.cs",
+              "RelativeToolTip": "Core\\DomainLayer\\Models\\ProductType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T19:21:46.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductBrand.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\Models\\ProductBrand.cs",
+              "RelativeDocumentMoniker": "Core\\DomainLayer\\Models\\ProductBrand.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\Models\\ProductBrand.cs",
+              "RelativeToolTip": "Core\\DomainLayer\\Models\\ProductBrand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T19:21:33.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Product.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Core\\DomainLayer\\Models\\Product.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\Models\\Product.cs",
+              "RelativeToolTip": "Core\\DomainLayer\\Models\\Product.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T19:21:17.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ServiceAbstractionLayer",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj",
+              "RelativeDocumentMoniker": "Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj",
+              "RelativeToolTip": "Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-27T19:06:46.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TalabatSystem",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\TalabatSystem.csproj",
+              "RelativeDocumentMoniker": "TalabatSystem\\TalabatSystem.csproj",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\TalabatSystem.csproj",
+              "RelativeToolTip": "TalabatSystem\\TalabatSystem.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-27T19:05:22.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PersistenceLayer",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\PersistenceLayer.csproj",
+              "RelativeDocumentMoniker": "InfraStructure\\Persistence\\PersistenceLayer.csproj",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\InfraStructure\\Persistence\\PersistenceLayer.csproj",
+              "RelativeToolTip": "InfraStructure\\Persistence\\PersistenceLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-27T19:04:53.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ServiceLayer",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceLayer\\ServiceLayer.csproj",
+              "RelativeDocumentMoniker": "Core\\ServiceLayer\\ServiceLayer.csproj",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceLayer\\ServiceLayer.csproj",
+              "RelativeToolTip": "Core\\ServiceLayer\\ServiceLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-27T19:04:14.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "TalabatSystem\\Controllers\\ProductController.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "TalabatSystem\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T15:13:36.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Product.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "TalabatSystem\\Models\\Product.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\Models\\Product.cs",
+              "RelativeToolTip": "TalabatSystem\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T15:12:38.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "TalabatSystem\\WeatherForecast.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\WeatherForecast.cs",
+              "RelativeToolTip": "TalabatSystem\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T14:28:09.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TalabatSystem.http",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\TalabatSystem.http",
+              "RelativeDocumentMoniker": "TalabatSystem\\TalabatSystem.http",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\TalabatSystem.http",
+              "RelativeToolTip": "TalabatSystem\\TalabatSystem.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-10-27T14:03:43.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\Program.cs",
+              "RelativeDocumentMoniker": "TalabatSystem\\Program.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\Program.cs",
+              "RelativeToolTip": "TalabatSystem\\Program.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T13:57:00.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "TalabatSystem\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "TalabatSystem\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T13:55:47.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TalabatSystem\\Properties\\launchSettings.json",
+              "ToolTip": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\TalabatSystem\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TalabatSystem\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-27T13:55:37.033Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

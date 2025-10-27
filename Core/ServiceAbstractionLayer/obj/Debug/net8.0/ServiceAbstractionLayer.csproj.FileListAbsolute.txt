@@ -1,0 +1,15 @@
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\bin\Debug\net8.0\ServiceAbstractionLayer.deps.json
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\bin\Debug\net8.0\ServiceAbstractionLayer.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\bin\Debug\net8.0\ServiceAbstractionLayer.pdb
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\bin\Debug\net8.0\Shared.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\bin\Debug\net8.0\Shared.pdb
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.csproj.AssemblyReference.cache
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.AssemblyInfoInputs.cache
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.AssemblyInfo.cs
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.csproj.CoreCompileInputs.cache
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceA.CFC80F52.Up2Date
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\obj\Debug\net8.0\refint\ServiceAbstractionLayer.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.pdb
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ref\ServiceAbstractionLayer.dll
