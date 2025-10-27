@@ -1,0 +1,11 @@
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\bin\Debug\net8.0\DomainLayer.deps.json
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\bin\Debug\net8.0\DomainLayer.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\bin\Debug\net8.0\DomainLayer.pdb
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.AssemblyInfoInputs.cache
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.AssemblyInfo.cs
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.csproj.CoreCompileInputs.cache
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\obj\Debug\net8.0\refint\DomainLayer.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.pdb
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\obj\Debug\net8.0\ref\DomainLayer.dll

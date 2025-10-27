@@ -1,0 +1,11 @@
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Shared\bin\Debug\net8.0\Shared.deps.json
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Shared\bin\Debug\net8.0\Shared.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Shared\bin\Debug\net8.0\Shared.pdb
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Shared\obj\Debug\net8.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Shared\obj\Debug\net8.0\Shared.AssemblyInfoInputs.cache
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Shared\obj\Debug\net8.0\Shared.AssemblyInfo.cs
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Shared\obj\Debug\net8.0\Shared.csproj.CoreCompileInputs.cache
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Shared\obj\Debug\net8.0\Shared.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Shared\obj\Debug\net8.0\refint\Shared.dll
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Shared\obj\Debug\net8.0\Shared.pdb
+F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Shared\obj\Debug\net8.0\ref\Shared.dll
