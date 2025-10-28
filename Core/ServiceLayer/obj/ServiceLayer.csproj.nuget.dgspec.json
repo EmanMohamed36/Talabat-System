@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceLayer\\ServiceLayer.csproj": {}
+    "C:\\Users\\password\\Talabat-System\\Core\\ServiceLayer\\ServiceLayer.csproj": {}
   },
   "projects": {
-    "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\DomainLayer.csproj": {
+    "C:\\Users\\password\\Talabat-System\\Core\\DomainLayer\\DomainLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\DomainLayer.csproj",
+        "projectUniqueName": "C:\\Users\\password\\Talabat-System\\Core\\DomainLayer\\DomainLayer.csproj",
         "projectName": "DomainLayer",
-        "projectPath": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\DomainLayer.csproj",
+        "projectPath": "C:\\Users\\password\\Talabat-System\\Core\\DomainLayer\\DomainLayer.csproj",
         "packagesPath": "C:\\Users\\password\\.nuget\\packages\\",
-        "outputPath": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\obj\\",
+        "outputPath": "C:\\Users\\password\\Talabat-System\\Core\\DomainLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj": {
+    "C:\\Users\\password\\Talabat-System\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj",
+        "projectUniqueName": "C:\\Users\\password\\Talabat-System\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj",
         "projectName": "ServiceAbstractionLayer",
-        "projectPath": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj",
+        "projectPath": "C:\\Users\\password\\Talabat-System\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj",
         "packagesPath": "C:\\Users\\password\\.nuget\\packages\\",
-        "outputPath": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceAbstractionLayer\\obj\\",
+        "outputPath": "C:\\Users\\password\\Talabat-System\\Core\\ServiceAbstractionLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Shared\\Shared.csproj": {
-                "projectPath": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Shared\\Shared.csproj"
+              "C:\\Users\\password\\Talabat-System\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\password\\Talabat-System\\Shared\\Shared.csproj"
               }
             }
           }
@@ -138,14 +138,14 @@
         }
       }
     },
-    "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceLayer\\ServiceLayer.csproj": {
+    "C:\\Users\\password\\Talabat-System\\Core\\ServiceLayer\\ServiceLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceLayer\\ServiceLayer.csproj",
+        "projectUniqueName": "C:\\Users\\password\\Talabat-System\\Core\\ServiceLayer\\ServiceLayer.csproj",
         "projectName": "ServiceLayer",
-        "projectPath": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceLayer\\ServiceLayer.csproj",
+        "projectPath": "C:\\Users\\password\\Talabat-System\\Core\\ServiceLayer\\ServiceLayer.csproj",
         "packagesPath": "C:\\Users\\password\\.nuget\\packages\\",
-        "outputPath": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceLayer\\obj\\",
+        "outputPath": "C:\\Users\\password\\Talabat-System\\Core\\ServiceLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -166,11 +166,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\DomainLayer.csproj": {
-                "projectPath": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\DomainLayer\\DomainLayer.csproj"
+              "C:\\Users\\password\\Talabat-System\\Core\\DomainLayer\\DomainLayer.csproj": {
+                "projectPath": "C:\\Users\\password\\Talabat-System\\Core\\DomainLayer\\DomainLayer.csproj"
               },
-              "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj": {
-                "projectPath": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj"
+              "C:\\Users\\password\\Talabat-System\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj": {
+                "projectPath": "C:\\Users\\password\\Talabat-System\\Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj"
               }
             }
           }
@@ -190,6 +190,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -210,14 +216,14 @@
         }
       }
     },
-    "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Shared\\Shared.csproj": {
+    "C:\\Users\\password\\Talabat-System\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\password\\Talabat-System\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Shared\\Shared.csproj",
+        "projectPath": "C:\\Users\\password\\Talabat-System\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\password\\.nuget\\packages\\",
-        "outputPath": "F:\\RouteAcademayVersion02\\APIs\\TalabatSystem\\TalabatSystem\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\password\\Talabat-System\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

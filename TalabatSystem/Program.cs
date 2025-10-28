@@ -3,12 +3,15 @@ using DomainLayer.Contracts;
 using Microsoft.EntityFrameworkCore;
 using PersistenceLayer;
 using PersistenceLayer.Data;
+using PersistenceLayer.Repositories;
+using ServiceAbstractionLayer;
+using ServiceLayer;
 
 namespace TalabatSystem
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +27,10 @@ namespace TalabatSystem
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
             builder.Services.AddScoped<IDataSeeding, DataSeeding>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IServiceManager, ServiceManager>();
+            builder.Services.AddAutoMapper((action) => { }, typeof(ServiceLayerAssemblyReference).Assembly);
+            //builder.Services.AddAutoMapper((action) => { }, typeof(ProductProfile));
 
             #endregion
 
@@ -33,7 +40,7 @@ namespace TalabatSystem
 
             using var scope =  app.Services.CreateScope();
             var seedObj = scope.ServiceProvider.GetRequiredService<IDataSeeding>();
-            seedObj.DataSeed();
+            await seedObj.DataSeedAsync();
             #endregion
 
             // Configure the HTTP request pipeline.
@@ -42,6 +49,7 @@ namespace TalabatSystem
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseStaticFiles();
 
             app.UseHttpsRedirection();
 
@@ -54,3 +62,5 @@ namespace TalabatSystem
         }
     }
 }
+
+//how serviceLayerAssemblyReference see product service 
