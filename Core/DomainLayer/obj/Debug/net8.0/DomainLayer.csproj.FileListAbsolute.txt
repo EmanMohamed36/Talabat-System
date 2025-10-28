@@ -9,3 +9,15 @@ F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\obj\
 F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\obj\Debug\net8.0\refint\DomainLayer.dll
 F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.pdb
 F:\RouteAcademayVersion02\APIs\TalabatSystem\TalabatSystem\Core\DomainLayer\obj\Debug\net8.0\ref\DomainLayer.dll
+C:\Users\password\Talabat-System\Core\DomainLayer\bin\Debug\net8.0\DomainLayer.deps.json
+C:\Users\password\Talabat-System\Core\DomainLayer\bin\Debug\net8.0\DomainLayer.dll
+C:\Users\password\Talabat-System\Core\DomainLayer\bin\Debug\net8.0\DomainLayer.pdb
+C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.AssemblyInfoInputs.cache
+C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.AssemblyInfo.cs
+C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.csproj.CoreCompileInputs.cache
+C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.sourcelink.json
+C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.dll
+C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\refint\DomainLayer.dll
+C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.pdb
+C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\ref\DomainLayer.dll
