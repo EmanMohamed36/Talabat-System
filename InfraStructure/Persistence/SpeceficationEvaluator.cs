@@ -1,0 +1,47 @@
+﻿using DomainLayer.Contracts;
+using DomainLayer.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+using Microsoft.EntityFrameworkCore.Query;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PersistenceLayer
+{
+    public static class SpeceficationEvaluator
+    {
+        public static IQueryable<TEntity> CreateQuery<TEntity, TKey>(IQueryable<TEntity> inputQuery, ISpecifications<TEntity, TKey> specifications)
+            where TEntity : BaseEntity<TKey>
+        { 
+            var query = inputQuery;
+
+            if(specifications.Criteria is not null)
+            {
+                query = query.Where(specifications.Criteria);
+            }
+
+            if (specifications.OrderBY is not null)
+            { 
+                query = query.OrderBy(specifications.OrderBY);
+            }
+            if (specifications.OrderBYDescending is not null)
+            { 
+                query = query.OrderByDescending(specifications.OrderBYDescending);
+            }
+            if (specifications.IncludeExpressions is not null && specifications.IncludeExpressions.Any())
+            {
+                //foreach (var expression in specifications.IncludeExpressions)
+                //{ 
+                //    query.Include(expression);
+                //}
+               query= specifications.IncludeExpressions.Aggregate(query, (current, includeExpression) => current.Include(includeExpression));
+            }
+
+            return query;
+
+        }
+    }
+}

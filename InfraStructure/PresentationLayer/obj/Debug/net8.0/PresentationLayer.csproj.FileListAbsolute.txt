@@ -33,3 +33,5 @@ C:\Users\password\Talabat-System\InfraStructure\PresentationLayer\obj\Debug\net8
 C:\Users\password\Talabat-System\InfraStructure\PresentationLayer\obj\Debug\net8.0\refint\PresentationLayer.dll
 C:\Users\password\Talabat-System\InfraStructure\PresentationLayer\obj\Debug\net8.0\PresentationLayer.pdb
 C:\Users\password\Talabat-System\InfraStructure\PresentationLayer\obj\Debug\net8.0\ref\PresentationLayer.dll
+C:\Users\password\Talabat-System\InfraStructure\PresentationLayer\bin\Debug\net8.0\DomainLayer.dll
+C:\Users\password\Talabat-System\InfraStructure\PresentationLayer\bin\Debug\net8.0\DomainLayer.pdb

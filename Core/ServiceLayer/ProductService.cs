@@ -2,7 +2,10 @@
 using DomainLayer.Contracts;
 using DomainLayer.Models;
 using ServiceAbstractionLayer;
+using ServiceLayer.Specifications;
 using Shared.DTOS;
+using Shared.Enums;
+using Shared.QueryParams;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,10 +25,11 @@ namespace ServiceLayer
             return brandsDTO;
         }
 
-        public async Task<IEnumerable<ProductDTO>> GetAllProductsAsync()
+        public async Task<IEnumerable<ProductDTO>> GetAllProductsAsync(QueryProductParams queryParams)
         {
+            var spec = new ProductWithBrandAndTypeSpecifications(queryParams);
             var repo = _unitOfWork.GetRepository<Product, int>();
-            var products = await repo.GetAllAsync();
+            var products = await repo.GetAllAsync(spec);
             var productsDTO = _mapper.Map < IEnumerable< ProductDTO >> (products);
             return productsDTO;
         }
@@ -39,7 +43,8 @@ namespace ServiceLayer
 
         public async Task<ProductDTO> GetProductByIdAsync(int id)
         {
-            var product =  await _unitOfWork.GetRepository<Product,int>().GetByIdAsync(id);
+            var spec = new ProductWithBrandAndTypeSpecifications(id);
+            var product =  await _unitOfWork.GetRepository<Product,int>().GetByIdAsync(spec);
             var productDTO = _mapper.Map<ProductDTO>(product);
             return productDTO;
         }

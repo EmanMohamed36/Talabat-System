@@ -97,6 +97,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\password\\Talabat-System\\Core\\DomainLayer\\DomainLayer.csproj": {
+                "projectPath": "C:\\Users\\password\\Talabat-System\\Core\\DomainLayer\\DomainLayer.csproj"
+              },
               "C:\\Users\\password\\Talabat-System\\Shared\\Shared.csproj": {
                 "projectPath": "C:\\Users\\password\\Talabat-System\\Shared\\Shared.csproj"
               }
@@ -194,6 +197,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[15.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [

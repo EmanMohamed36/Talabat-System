@@ -32,6 +32,17 @@ namespace PersistenceLayer.Repositories
 
         public void Update(TEntity entity)
             => _dbContext.Set<TEntity>().Update(entity);
-                
+
+        #region With Specification
+        async Task<IEnumerable<TEntity>> IGenericRepository<TEntity, TKey>.GetAllAsync(ISpecifications<TEntity, TKey> specifications)
+        {
+            return await SpeceficationEvaluator.CreateQuery(_dbContext.Set<TEntity>(), specifications).ToListAsync();
+        }
+
+        async Task<TEntity?> IGenericRepository<TEntity, TKey>.GetByIdAsync(ISpecifications<TEntity, TKey> specifications)
+        {
+            return await SpeceficationEvaluator.CreateQuery(_dbContext.Set<TEntity>(), specifications).FirstOrDefaultAsync();
+        } 
+        #endregion
     }
 }
