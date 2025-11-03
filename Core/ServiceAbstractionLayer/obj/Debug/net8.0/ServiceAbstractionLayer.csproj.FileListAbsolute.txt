@@ -29,3 +29,5 @@ C:\Users\password\Talabat-System\Core\ServiceAbstractionLayer\obj\Debug\net8.0\S
 C:\Users\password\Talabat-System\Core\ServiceAbstractionLayer\obj\Debug\net8.0\refint\ServiceAbstractionLayer.dll
 C:\Users\password\Talabat-System\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ServiceAbstractionLayer.pdb
 C:\Users\password\Talabat-System\Core\ServiceAbstractionLayer\obj\Debug\net8.0\ref\ServiceAbstractionLayer.dll
+C:\Users\password\Talabat-System\Core\ServiceAbstractionLayer\bin\Debug\net8.0\DomainLayer.dll
+C:\Users\password\Talabat-System\Core\ServiceAbstractionLayer\bin\Debug\net8.0\DomainLayer.pdb

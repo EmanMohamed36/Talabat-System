@@ -1,4 +1,6 @@
 ﻿using Shared.DTOS;
+using Shared.Enums;
+using Shared.QueryParams;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +11,7 @@ namespace ServiceAbstractionLayer
 {
     public interface IProductService
     {
-        Task<IEnumerable<ProductDTO>> GetAllProductsAsync();
+        Task<IEnumerable<ProductDTO>> GetAllProductsAsync(QueryProductParams queryParams);
 
         Task<ProductDTO> GetProductByIdAsync(int id);
 

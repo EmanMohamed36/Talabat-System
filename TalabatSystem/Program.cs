@@ -49,7 +49,7 @@ namespace TalabatSystem
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-            app.UseStaticFiles();
+            app.UseStaticFiles(); //For images ,files
 
             app.UseHttpsRedirection();
 
@@ -63,4 +63,8 @@ namespace TalabatSystem
     }
 }
 
-//how serviceLayerAssemblyReference see product service 
+//how serviceLayerAssemblyReference see product service?
+//profile ????? ??? ?? ???? ????? ??
+
+
+

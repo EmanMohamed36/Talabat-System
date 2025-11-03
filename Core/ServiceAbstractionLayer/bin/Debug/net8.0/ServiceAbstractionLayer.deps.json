@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v8.0": {
       "ServiceAbstractionLayer/1.0.0": {
         "dependencies": {
+          "DomainLayer": "1.0.0",
           "Shared": "1.0.0"
         },
         "runtime": {
           "ServiceAbstractionLayer.dll": {}
+        }
+      },
+      "DomainLayer/1.0.0": {
+        "runtime": {
+          "DomainLayer.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Shared/1.0.0": {
@@ -26,6 +35,11 @@
   },
   "libraries": {
     "ServiceAbstractionLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DomainLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

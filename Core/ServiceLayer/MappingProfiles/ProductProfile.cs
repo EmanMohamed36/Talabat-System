@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.WebRequestMethods;
 
 namespace ServiceLayer.MappingProfiles
 {
@@ -17,7 +18,9 @@ namespace ServiceLayer.MappingProfiles
                     .ForMember(des => des.BrandName,
                     options => options.MapFrom(src => src.ProductBrand.Name))
                     .ForMember(des => des.TypeName,
-                    options => options.MapFrom(src => src.ProductType.Name));
+                    options => options.MapFrom(src => src.ProductType.Name))
+                    .ForMember(des => des.PictureUrl, 
+                    options => options.MapFrom<PictureUrlResolver>());
 
 
             CreateMap<ProductBrand, BrandDTO>();
