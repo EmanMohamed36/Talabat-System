@@ -23,22 +23,36 @@ namespace PersistenceLayer
                 query = query.Where(specifications.Criteria);
             }
 
+            #region Ordering
             if (specifications.OrderBY is not null)
-            { 
+            {
                 query = query.OrderBy(specifications.OrderBY);
             }
             if (specifications.OrderBYDescending is not null)
-            { 
+            {
                 query = query.OrderByDescending(specifications.OrderBYDescending);
             }
+            #endregion
+
+            #region Including
             if (specifications.IncludeExpressions is not null && specifications.IncludeExpressions.Any())
             {
                 //foreach (var expression in specifications.IncludeExpressions)
                 //{ 
                 //    query.Include(expression);
                 //}
-               query= specifications.IncludeExpressions.Aggregate(query, (current, includeExpression) => current.Include(includeExpression));
+                query = specifications.IncludeExpressions.Aggregate(query, (current, includeExpression) => current.Include(includeExpression));
             }
+            #endregion
+
+            
+            #region Pagination
+
+            if (specifications.IsPaginated)
+            { 
+                query = query.Skip(specifications.Skip).Take(specifications.Take);
+            }
+            #endregion
 
             return query;
 

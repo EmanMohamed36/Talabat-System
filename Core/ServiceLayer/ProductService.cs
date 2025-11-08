@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using DomainLayer.Contracts;
-using DomainLayer.Models;
+using DomainLayer.Exceptions;
+using DomainLayer.Models.ProductModule;
 using ServiceAbstractionLayer;
 using ServiceLayer.Specifications;
+using Shared;
 using Shared.DTOS;
 using Shared.Enums;
 using Shared.QueryParams;
@@ -25,13 +27,20 @@ namespace ServiceLayer
             return brandsDTO;
         }
 
-        public async Task<IEnumerable<ProductDTO>> GetAllProductsAsync(QueryProductParams queryParams)
+        public async Task<PaginatedResult<ProductDTO>> GetAllProductsAsync(QueryProductParams queryParams)
         {
             var spec = new ProductWithBrandAndTypeSpecifications(queryParams);
             var repo = _unitOfWork.GetRepository<Product, int>();
             var products = await repo.GetAllAsync(spec);
             var productsDTO = _mapper.Map < IEnumerable< ProductDTO >> (products);
-            return productsDTO;
+
+            var specificationOfCount = new ProductCountSpecification(queryParams);
+            var countProductWithSpecification = await repo.GetCountSpecificationAsync(specificationOfCount);
+
+
+            var paginatedProducts = new PaginatedResult<ProductDTO>
+                (queryParams.PageSize, queryParams.PageIndex, countProductWithSpecification, productsDTO);
+            return paginatedProducts;
         }
 
         public async Task<IEnumerable<TypeDTO>> GetAllTypesAsync()
@@ -45,6 +54,7 @@ namespace ServiceLayer
         {
             var spec = new ProductWithBrandAndTypeSpecifications(id);
             var product =  await _unitOfWork.GetRepository<Product,int>().GetByIdAsync(spec);
+            if (product == null) throw new ProductNotFoundException(id);
             var productDTO = _mapper.Map<ProductDTO>(product);
             return productDTO;
         }

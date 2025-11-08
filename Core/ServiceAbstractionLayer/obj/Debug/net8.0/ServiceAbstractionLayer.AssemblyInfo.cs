@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ServiceAbstractionLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9191b76a5e8bf9be4e1a74f93ccdca4ff5cee422")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52958310f9c32e5a12e79831ec4e82a056d0b5c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ServiceAbstractionLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ServiceAbstractionLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
