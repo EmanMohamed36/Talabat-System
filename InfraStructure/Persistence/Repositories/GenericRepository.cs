@@ -17,7 +17,7 @@ namespace PersistenceLayer.Repositories
     {
         public async Task AddAsync(TEntity entity) 
             => await _dbContext.Set<TEntity>().AddAsync(entity);
-        
+            
 
         public async Task<IEnumerable<TEntity>> GetAllAsync()
             => await _dbContext.Set<TEntity>().ToListAsync();
@@ -42,7 +42,13 @@ namespace PersistenceLayer.Repositories
         async Task<TEntity?> IGenericRepository<TEntity, TKey>.GetByIdAsync(ISpecifications<TEntity, TKey> specifications)
         {
             return await SpeceficationEvaluator.CreateQuery(_dbContext.Set<TEntity>(), specifications).FirstOrDefaultAsync();
-        } 
+        }
+
+        async Task<int> IGenericRepository<TEntity, TKey>.GetCountSpecificationAsync(ISpecifications<TEntity, TKey> specifications)
+        {
+            return await SpeceficationEvaluator.CreateQuery(_dbContext.Set<TEntity>(), specifications).CountAsync();
+
+        }
         #endregion
     }
 }

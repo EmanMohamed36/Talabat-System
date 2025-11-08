@@ -317,3 +317,5 @@ C:\Users\password\Talabat-System\TalabatSystem\obj\Debug\net8.0\TalabatSystem.pd
 C:\Users\password\Talabat-System\TalabatSystem\obj\Debug\net8.0\TalabatSystem.genruntimeconfig.cache
 C:\Users\password\Talabat-System\TalabatSystem\obj\Debug\net8.0\ref\TalabatSystem.dll
 C:\Users\password\Talabat-System\TalabatSystem\bin\Debug\net8.0\TalabatSystem.staticwebassets.runtime.json
+C:\Users\password\Talabat-System\TalabatSystem\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\password\Talabat-System\TalabatSystem\bin\Debug\net8.0\StackExchange.Redis.dll

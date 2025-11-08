@@ -1,4 +1,4 @@
-﻿using DomainLayer.Models;
+﻿using DomainLayer.Models.ProductModule;
 using Shared.Enums;
 using Shared.QueryParams;
 using System;
@@ -38,6 +38,8 @@ namespace ServiceLayer.Specifications
                     break;
 
             }
+
+            ApplyPagination(queryParams.PageSize, queryParams.PageIndex);
         }
 
         public ProductWithBrandAndTypeSpecifications(int id) : base(p => p.Id == id)

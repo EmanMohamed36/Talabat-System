@@ -1,11 +1,14 @@
 
 using DomainLayer.Contracts;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PersistenceLayer;
 using PersistenceLayer.Data;
 using PersistenceLayer.Repositories;
 using ServiceAbstractionLayer;
 using ServiceLayer;
+using TalabatSystem.CustomMiddleWares;
+using TalabatSystem.Factories;
 
 namespace TalabatSystem
 {
@@ -15,7 +18,7 @@ namespace TalabatSystem
         {
             var builder = WebApplication.CreateBuilder(args);
 
-           
+
             #region Add services to the container.
 
             builder.Services.AddControllers();
@@ -38,17 +41,35 @@ namespace TalabatSystem
 
             #region Call Seeding service Mannually
 
-            using var scope =  app.Services.CreateScope();
+            using var scope = app.Services.CreateScope();
             var seedObj = scope.ServiceProvider.GetRequiredService<IDataSeeding>();
             await seedObj.DataSeedAsync();
             #endregion
 
-            // Configure the HTTP request pipeline.
+
+            #region Configure the HTTP request pipeline.
+
+            //app.Use(async (RequestContent, NextMiddleWare) =>
+            //{
+            //    Console.WriteLine("Request Under Processing");
+            //    await NextMiddleWare.Invoke();
+            //    Console.WriteLine("Waiting response");
+            //});
+
+           
+            app.UseMiddleware<CustomExceptionHandlerMiddleWare>();
+
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            //builder.Services.Configure<ApiBehaviorOptions>((options) =>
+            //{
+            //    options.InvalidModelStateResponseFactory = ApiResponseFactory.GenerateApiValidationErrorResponse;
+            //});
+
             app.UseStaticFiles(); //For images ,files
 
             app.UseHttpsRedirection();
@@ -56,7 +77,8 @@ namespace TalabatSystem
             app.UseAuthorization();
 
 
-            app.MapControllers();
+            app.MapControllers(); 
+            #endregion
 
             app.Run();
         }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using ServiceAbstractionLayer;
+using Shared;
 using Shared.DTOS;
 using Shared.Enums;
 using Shared.QueryParams;
@@ -17,7 +18,7 @@ namespace PresentationLayer
     public class ProductsController(IServiceManager _serviceManager) :ControllerBase
     {
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetAllProducts([FromQuery]QueryProductParams queryParams)
+        public async Task<ActionResult<PaginatedResult<ProductDTO>>> GetAllProducts([FromQuery]QueryProductParams queryParams)
         { 
             var products = await _serviceManager.ProductService.GetAllProductsAsync(queryParams);
             return  Ok(products);
