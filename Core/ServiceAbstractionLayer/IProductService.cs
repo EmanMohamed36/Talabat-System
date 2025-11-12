@@ -1,5 +1,5 @@
 ﻿using Shared;
-using Shared.DTOS;
+using Shared.DTOS.ProductDTOs;
 using Shared.Enums;
 using Shared.QueryParams;
 using System;
