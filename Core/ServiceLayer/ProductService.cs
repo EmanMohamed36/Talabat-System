@@ -5,7 +5,7 @@ using DomainLayer.Models.ProductModule;
 using ServiceAbstractionLayer;
 using ServiceLayer.Specifications;
 using Shared;
-using Shared.DTOS;
+using Shared.DTOS.ProductDTOs;
 using Shared.Enums;
 using Shared.QueryParams;
 using System;

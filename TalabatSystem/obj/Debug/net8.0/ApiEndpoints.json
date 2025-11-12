@@ -1,5 +1,83 @@
 [
   {
+    "ContainingType": "PresentationLayer.Controllers.BasketController",
+    "Method": "GetBasket",
+    "RelativePath": "api/Basket",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Shared.DTOS.BasketDTOs.BasketDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PresentationLayer.Controllers.BasketController",
+    "Method": "CreateOrUpdateBasekt",
+    "RelativePath": "api/Basket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "basket",
+        "Type": "Shared.DTOS.BasketDTOs.BasketDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Shared.DTOS.BasketDTOs.BasketDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PresentationLayer.Controllers.BasketController",
+    "Method": "DeleteBasket",
+    "RelativePath": "api/Basket",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "TalabatSystem.Controllers.ProductController",
     "Method": "GetAll",
     "RelativePath": "api/Product",
@@ -150,7 +228,7 @@
     ]
   },
   {
-    "ContainingType": "PresentationLayer.ProductsController",
+    "ContainingType": "PresentationLayer.Controllers.ProductsController",
     "Method": "GetAllProducts",
     "RelativePath": "api/Products",
     "HttpMethod": "GET",
@@ -190,7 +268,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Shared.PaginatedResult\u00601[[Shared.DTOS.ProductDTO, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Shared.PaginatedResult\u00601[[Shared.DTOS.ProductDTOs.ProductDTO, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -201,7 +279,7 @@
     ]
   },
   {
-    "ContainingType": "PresentationLayer.ProductsController",
+    "ContainingType": "PresentationLayer.Controllers.ProductsController",
     "Method": "GetProductById",
     "RelativePath": "api/Products/{id}",
     "HttpMethod": "GET",
@@ -216,7 +294,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Shared.DTOS.ProductDTO",
+        "Type": "Shared.DTOS.ProductDTOs.ProductDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -227,7 +305,7 @@
     ]
   },
   {
-    "ContainingType": "PresentationLayer.ProductsController",
+    "ContainingType": "PresentationLayer.Controllers.ProductsController",
     "Method": "GetAllBrands",
     "RelativePath": "api/Products/brands",
     "HttpMethod": "GET",
@@ -236,7 +314,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "Shared.DTOS.BrandDTO",
+        "Type": "Shared.DTOS.ProductDTOs.BrandDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -247,7 +325,7 @@
     ]
   },
   {
-    "ContainingType": "PresentationLayer.ProductsController",
+    "ContainingType": "PresentationLayer.Controllers.ProductsController",
     "Method": "GetAllTypes",
     "RelativePath": "api/Products/types",
     "HttpMethod": "GET",
@@ -256,7 +334,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "Shared.DTOS.TypeDTO",
+        "Type": "Shared.DTOS.ProductDTOs.TypeDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",

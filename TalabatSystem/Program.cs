@@ -7,6 +7,7 @@ using PersistenceLayer.Data;
 using PersistenceLayer.Repositories;
 using ServiceAbstractionLayer;
 using ServiceLayer;
+using StackExchange.Redis;
 using TalabatSystem.CustomMiddleWares;
 using TalabatSystem.Factories;
 
@@ -34,6 +35,12 @@ namespace TalabatSystem
             builder.Services.AddScoped<IServiceManager, ServiceManager>();
             builder.Services.AddAutoMapper((action) => { }, typeof(ServiceLayerAssemblyReference).Assembly);
             //builder.Services.AddAutoMapper((action) => { }, typeof(ProductProfile));
+            builder.Services.AddScoped<IBasketRepository, BasketRepository>();
+            builder.Services.AddSingleton<IConnectionMultiplexer>((_) => {
+                return ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RdisConnection"));
+            
+            });
+
 
             #endregion
 
