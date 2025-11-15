@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using ServiceAbstractionLayer;
 using Shared;
@@ -15,6 +16,7 @@ namespace PresentationLayer.Controllers
 {
     [ApiController]
     [Route("api/[Controller]")]
+    //[Authorize]
     public class ProductsController(IServiceManager _serviceManager) :ControllerBase
     {
         [HttpGet]

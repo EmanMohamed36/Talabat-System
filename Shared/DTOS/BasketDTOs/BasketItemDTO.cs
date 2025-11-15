@@ -10,7 +10,7 @@ namespace Shared.DTOS.BasketDTOs
     public class BasketItemDTO
     {
         public int Id { get; set; }
-        public string ProductName { get; set; } = null!;
+        public string Name { get; set; } = null!;
 
         public string PictureUrl { get; set; } = null!;
 

@@ -1,9 +1,12 @@
 
 using DomainLayer.Contracts;
+using DomainLayer.Models.IdentityModels;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PersistenceLayer;
 using PersistenceLayer.Data;
+using PersistenceLayer.Identity;
 using PersistenceLayer.Repositories;
 using ServiceAbstractionLayer;
 using ServiceLayer;
@@ -42,6 +45,22 @@ namespace TalabatSystem
             });
 
 
+            #region Identity
+            builder.Services.AddDbContext<StoreIdentityDbContext>(options =>
+                {
+                    options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection"));
+                });
+
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+                    .AddEntityFrameworkStores<StoreIdentityDbContext>();
+
+            //builder.Services.AddIdentityCore<ApplicationUser>().AddRoles<IdentityRole>()
+            //       .AddEntityFrameworkStores<StoreIdentityDbContext>();
+
+
+            #endregion
+
+
             #endregion
 
             var app = builder.Build();
@@ -51,6 +70,7 @@ namespace TalabatSystem
             using var scope = app.Services.CreateScope();
             var seedObj = scope.ServiceProvider.GetRequiredService<IDataSeeding>();
             await seedObj.DataSeedAsync();
+            await seedObj.IdentityDataSeedAsync();
             #endregion
 
 
