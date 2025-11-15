@@ -21,3 +21,4 @@ C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.d
 C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\refint\DomainLayer.dll
 C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.pdb
 C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\ref\DomainLayer.dll
+C:\Users\password\Talabat-System\Core\DomainLayer\obj\Debug\net8.0\DomainLayer.csproj.AssemblyReference.cache

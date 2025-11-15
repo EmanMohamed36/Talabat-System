@@ -32,31 +32,40 @@ namespace TalabatSystem.CustomMiddleWares
 
         private static async Task HandleExceptionAsync(HttpContext httpContext, Exception ex)
         {
+            //Create Response Object
+            var response = new ErrorToReturn()
+            {
+                ErrorMessage = ex.Message
+            };
+
 
             //Set Status Code For Response 
             //httpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
             httpContext.Response.StatusCode = ex switch
             {
                 NotFoundException => StatusCodes.Status404NotFound,
+                UnauthorizedException => StatusCodes.Status401Unauthorized,
+                BadRequestException badRequest => GetBadRequestErrors(response,badRequest),
+                EmailOrPhoneAlreadyExistException => StatusCodes.Status409Conflict,
                 _ => StatusCodes.Status500InternalServerError
             };
 
+            response.StatusCode = httpContext.Response.StatusCode;
+            
             //Set Content Type For Response 
             //httpContext.Response.ContentType = "application/json";
 
-            //Create Response Object
-            var response = new ErrorToReturn()
-            {
-                StatusCode = httpContext.Response.StatusCode,
-                ErrorMessage = ex.Message
-            };
-
+            
             //Return Object As Json
             //var responseToReturn = JsonSerializer.Serialize(response);
             //await httpContext.Response.WriteAsync(responseToReturn);
             await httpContext.Response.WriteAsJsonAsync(response);
         }
-
+        private static int GetBadRequestErrors(ErrorToReturn response, BadRequestException badRequestException)
+        {
+            response.Errors = badRequestException.Errors;
+            return StatusCodes.Status400BadRequest;
+        }
         private static async Task HandleNotFoundEndPointAsync(HttpContext httpContext)
         {
             if (httpContext.Response.StatusCode == StatusCodes.Status404NotFound)

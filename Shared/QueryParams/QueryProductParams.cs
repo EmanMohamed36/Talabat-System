@@ -22,7 +22,7 @@ namespace Shared.QueryParams
 
         public int PageIndex { get; set; } = 1;
         
-        private int pageSize;
+        private int pageSize = DefaultPageSize;
 
         public int PageSize
         {

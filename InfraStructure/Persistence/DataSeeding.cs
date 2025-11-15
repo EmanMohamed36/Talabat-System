@@ -1,5 +1,7 @@
 ﻿using DomainLayer.Contracts;
+using DomainLayer.Models.IdentityModels;
 using DomainLayer.Models.ProductModule;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PersistenceLayer.Data;
 using System;
@@ -11,7 +13,10 @@ using System.Threading.Tasks;
 
 namespace PersistenceLayer
 {
-    public class DataSeeding(StoreDbContext _storeDbContext) : IDataSeeding
+    public class DataSeeding(StoreDbContext _storeDbContext,
+                             UserManager<ApplicationUser> _userManager,
+                             RoleManager<IdentityRole> _roleManager) 
+        : IDataSeeding
     {
         public async Task DataSeedAsync()
         {
@@ -70,6 +75,49 @@ namespace PersistenceLayer
             {
 
                 //ToDO
+            }
+        }
+
+        public async Task IdentityDataSeedAsync()
+        {
+            try
+            {
+                if (!_roleManager.Roles.Any())
+                {
+                    await _roleManager.CreateAsync(new IdentityRole("Admin"));
+                    await _roleManager.CreateAsync(new IdentityRole("SuperAdmin"));
+
+                }
+                if (!_userManager.Users.Any())
+                {
+                    var user01 = new ApplicationUser
+                    {
+                        Email = "eman@gmail.com",
+                        UserName = "emanmohamed",
+                        DisplayName = "Eman Mohamed",
+                        PhoneNumber = "1234567890"
+                    };
+                    var user02 = new ApplicationUser
+                    {
+                        Email = "mohamed@gmail.com",
+                        UserName = "mohamedibrahem",
+                        DisplayName = "Mohamed Ibrahem",
+                        PhoneNumber = "1234567890"
+                    };
+                    await _userManager.CreateAsync(user01, "P@ssw0rd");
+                    await _userManager.CreateAsync(user02, "P@ssw0rd");
+
+                    await _userManager.AddToRoleAsync(user01, "Admin");
+                    await _userManager.AddToRoleAsync(user02, "SuperAdmin");
+
+                }
+
+
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
     }
