@@ -1,0 +1,20 @@
+﻿using DomainLayer.Models.OrderModels;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ServiceLayer.Specifications.OrderModuleSpecification
+{
+    public class OrderSpecification : BaseSpecifications<Order, Guid>
+    {
+        public OrderSpecification(string email) : base(o => o.UserEmail == email)
+        {
+            AddInclude(o => o.DeliveryMethod);
+            AddInclude(o => o.Items);
+            AddOrderBYDescending(o => o.OrderDate);
+        }
+    }
+}

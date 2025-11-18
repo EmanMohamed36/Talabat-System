@@ -44,10 +44,9 @@ namespace PresentationLayer.Controllers
             var result = await _serviceManager.AuthenticationService.GetCurrentUserAsync(email!);
             return Ok(result);
         }
+
         [Authorize]
-
         [HttpGet("Address")]
-
         public async Task<ActionResult<AddressDTO>> GetCurrentUserAddress()
         {
             var email = User.FindFirstValue(ClaimTypes.Email);

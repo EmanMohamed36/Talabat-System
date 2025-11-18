@@ -1,4 +1,6 @@
 ﻿using DomainLayer.Exceptions;
+using DomainLayer.Exceptions.ForbiddenExceptions;
+using DomainLayer.Exceptions.NotFoundExceptions;
 using Shared.ErrorModels;
 using System.Text.Json;
 
@@ -47,6 +49,8 @@ namespace TalabatSystem.CustomMiddleWares
                 UnauthorizedException => StatusCodes.Status401Unauthorized,
                 BadRequestException badRequest => GetBadRequestErrors(response,badRequest),
                 EmailOrPhoneAlreadyExistException => StatusCodes.Status409Conflict,
+                ForbiddenException => StatusCodes.Status403Forbidden,
+                
                 _ => StatusCodes.Status500InternalServerError
             };
 

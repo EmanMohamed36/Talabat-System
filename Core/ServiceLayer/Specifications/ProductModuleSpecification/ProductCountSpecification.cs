@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServiceLayer.Specifications
+namespace ServiceLayer.Specifications.ProductModuleSpecification
 {
     internal class ProductCountSpecification : BaseSpecifications<Product, int>
     {
