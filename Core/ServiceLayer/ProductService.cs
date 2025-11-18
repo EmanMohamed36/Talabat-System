@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
 using DomainLayer.Contracts;
 using DomainLayer.Exceptions;
+using DomainLayer.Exceptions.NotFoundExceptions;
 using DomainLayer.Models.ProductModule;
 using ServiceAbstractionLayer;
 using ServiceLayer.Specifications;
+using ServiceLayer.Specifications.ProductModuleSpecification;
 using Shared;
 using Shared.DTOS.ProductDTOs;
 using Shared.Enums;

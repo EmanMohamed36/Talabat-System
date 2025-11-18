@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DomainLayer.Contracts;
 using DomainLayer.Exceptions;
+using DomainLayer.Exceptions.NotFoundExceptions;
 using DomainLayer.Models.BasketModels;
 using ServiceAbstractionLayer;
 using Shared.DTOS.BasketDTOs;

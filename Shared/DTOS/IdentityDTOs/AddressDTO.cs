@@ -9,15 +9,15 @@ namespace Shared.DTOS.IdentityDTOs
 {
     public class AddressDTO
     {
-        [Required] 
+        [Required(ErrorMessage ="FirstName Required")] 
         public string FirstName { get; set; } =null!;
-        [Required]
+        [Required(ErrorMessage = "LastName Required")]
         public string LastName { get; set; }  =null!;
-         [Required] 
+         [Required(ErrorMessage = "Street Required")] 
         public string Street { get; set; }    =null!;
-         [Required] 
+         [Required(ErrorMessage = "City Required")] 
         public string City { get; set; }      =null!;
-         [Required] 
+         [Required(ErrorMessage = "Country Required")] 
         public string Country { get; set; }   =null!;
     }
 }

@@ -4,6 +4,7 @@ using DomainLayer.Models.IdentityModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using PersistenceLayer;
 using PersistenceLayer.Data;
 using PersistenceLayer.Identity;
@@ -11,6 +12,7 @@ using PersistenceLayer.Repositories;
 using ServiceAbstractionLayer;
 using ServiceLayer;
 using StackExchange.Redis;
+using System.Text;
 using TalabatSystem.CustomMiddleWares;
 using TalabatSystem.Factories;
 
@@ -63,6 +65,40 @@ namespace TalabatSystem
 
             #endregion
 
+            #region enable authentication ans jwt
+            // Enable Authentication + JWT
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = "Bearer";
+                options.DefaultChallengeScheme = "Bearer";
+            })
+            .AddJwtBearer("Bearer", options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+
+                    ValidIssuer = builder.Configuration["JWTOptions:Issuer"],
+                    ValidAudience = builder.Configuration["JWTOptions:Audiance"],
+                    IssuerSigningKey =
+                        new SymmetricSecurityKey(
+                            Encoding.UTF8.GetBytes(builder.Configuration["JWTOptions:SecretKey"]))
+                };
+            });
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                options.Events.OnRedirectToLogin = ctx =>
+                {
+                    ctx.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                    return Task.CompletedTask;
+                };
+            });
+
+            #endregion
+
             var app = builder.Build();
 
             #region Call Seeding service Mannually
@@ -101,7 +137,10 @@ namespace TalabatSystem
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
+
+            //app.UseAuthorization();
 
 
             app.MapControllers(); 

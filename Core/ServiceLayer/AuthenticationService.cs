@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using DomainLayer.Exceptions;
+using DomainLayer.Exceptions.NotFoundExceptions;
 using DomainLayer.Models.IdentityModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -99,7 +100,7 @@ namespace ServiceLayer
         public async Task<AddressDTO> CreateOrUpdateCurrentUserAddressAsync(AddressDTO addressDTO, string email)
         {
             var user = await _userManager.Users.Include(u => u.Address)
-                                               .FirstOrDefaultAsync()??
+                                               .FirstOrDefaultAsync(u=> u.Email == email)??
                                                throw new UserNotFoundException(email);
             if (user.Address is not null)//update
             {
