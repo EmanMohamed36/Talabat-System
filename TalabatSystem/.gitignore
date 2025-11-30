@@ -1,0 +1,26 @@
+﻿# Build folders
+bin/
+obj/
+
+# User secrets (do NOT commit)
+appsettings.Development.json
+appsettings.Local.json
+
+# Sensitive config
+*.Secret.json
+
+appsettings.json   # if it contains secrets
+
+
+# VS Code
+.vscode/
+.vs/
+
+
+# Rider / VS
+.idea/
+*.user
+*.suo
+
+# Ignore local appsettings that contain secrets
+TalabatSystem/bin/Debug/net8.0/appsettings.json

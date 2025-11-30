@@ -10,6 +10,7 @@ namespace Shared.DTOS.OrderDTOs
     public class OrderItemDTO
     {
 
+        public int productId { get; set; }
         [Required(ErrorMessage = "Product Name Required")]
         public string ProductName { get; set; } = null!;
 

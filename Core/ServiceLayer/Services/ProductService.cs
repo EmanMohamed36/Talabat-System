@@ -16,9 +16,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServiceLayer
+namespace ServiceLayer.Services
 {
-    internal class ProductService(IUnitOfWork _unitOfWork ,IMapper _mapper) 
+    public class ProductService(IUnitOfWork _unitOfWork ,IMapper _mapper) 
         : IProductService
     {
         public async Task<IEnumerable<BrandDTO>> GetAllBrandsAsync()

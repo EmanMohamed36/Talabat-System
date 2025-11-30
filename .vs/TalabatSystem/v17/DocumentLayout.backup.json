@@ -1,12 +1,119 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\password\\Talabat-System\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|c:\\users\\password\\talabat-system\\talabatsystem\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|solutionrelative:talabatsystem\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|c:\\users\\password\\talabat-system\\talabatsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D3AD881-C912-498B-8E60-CB6DF7AF3CC6}|TalabatSystem\\TalabatSystem.csproj|solutionrelative:talabatsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C440DBE-2885-439A-83E8-94E96E019C67}|Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj|c:\\users\\password\\talabat-system\\core\\serviceabstractionlayer\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C440DBE-2885-439A-83E8-94E96E019C67}|Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj|solutionrelative:core\\serviceabstractionlayer\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C440DBE-2885-439A-83E8-94E96E019C67}|Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj|c:\\users\\password\\talabat-system\\core\\serviceabstractionlayer\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C440DBE-2885-439A-83E8-94E96E019C67}|Core\\ServiceAbstractionLayer\\ServiceAbstractionLayer.csproj|solutionrelative:core\\serviceabstractionlayer\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|c:\\users\\password\\talabat-system\\infrastructure\\persistence\\data\\migrations\\20251117215114_changecostindeliverymethodtoprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E57D78DD-A80B-424E-8137-C5A010A1298C}|InfraStructure\\Persistence\\PersistenceLayer.csproj|solutionrelative:infrastructure\\persistence\\data\\migrations\\20251117215114_changecostindeliverymethodtoprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1DF1967-77D7-435C-8425-142544E32AF8}|Core\\DomainLayer\\DomainLayer.csproj|c:\\users\\password\\talabat-system\\core\\domainlayer\\models\\ordermodels\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1DF1967-77D7-435C-8425-142544E32AF8}|Core\\DomainLayer\\DomainLayer.csproj|solutionrelative:core\\domainlayer\\models\\ordermodels\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\password\\Talabat-System\\TalabatSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "TalabatSystem\\appsettings.json",
+              "ToolTip": "C:\\Users\\password\\Talabat-System\\TalabatSystem\\appsettings.json",
+              "RelativeToolTip": "TalabatSystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-30T05:14:27.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\password\\Talabat-System\\Core\\ServiceAbstractionLayer\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "Core\\ServiceAbstractionLayer\\IPaymentService.cs",
+              "ToolTip": "C:\\Users\\password\\Talabat-System\\Core\\ServiceAbstractionLayer\\IPaymentService.cs",
+              "RelativeToolTip": "Core\\ServiceAbstractionLayer\\IPaymentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T05:09:44.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\password\\Talabat-System\\Core\\ServiceAbstractionLayer\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Core\\ServiceAbstractionLayer\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\password\\Talabat-System\\Core\\ServiceAbstractionLayer\\IOrderService.cs",
+              "RelativeToolTip": "Core\\ServiceAbstractionLayer\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T05:09:38.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20251117215114_ChangeCostinDeliverymethodtoprice.cs",
+              "DocumentMoniker": "C:\\Users\\password\\Talabat-System\\InfraStructure\\Persistence\\Data\\Migrations\\20251117215114_ChangeCostinDeliverymethodtoprice.cs",
+              "RelativeDocumentMoniker": "InfraStructure\\Persistence\\Data\\Migrations\\20251117215114_ChangeCostinDeliverymethodtoprice.cs",
+              "ToolTip": "C:\\Users\\password\\Talabat-System\\InfraStructure\\Persistence\\Data\\Migrations\\20251117215114_ChangeCostinDeliverymethodtoprice.cs",
+              "RelativeToolTip": "InfraStructure\\Persistence\\Data\\Migrations\\20251117215114_ChangeCostinDeliverymethodtoprice.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T05:08:12.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\password\\Talabat-System\\Core\\DomainLayer\\Models\\OrderModels\\Order.cs",
+              "RelativeDocumentMoniker": "Core\\DomainLayer\\Models\\OrderModels\\Order.cs",
+              "ToolTip": "C:\\Users\\password\\Talabat-System\\Core\\DomainLayer\\Models\\OrderModels\\Order.cs",
+              "RelativeToolTip": "Core\\DomainLayer\\Models\\OrderModels\\Order.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T05:05:51.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\password\\Talabat-System\\TalabatSystem\\.gitignore",
+              "RelativeDocumentMoniker": "TalabatSystem\\.gitignore",
+              "ToolTip": "C:\\Users\\password\\Talabat-System\\TalabatSystem\\.gitignore",
+              "RelativeToolTip": "TalabatSystem\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVDhPrZRNTgIxFMerDIaEhHgU97JxwUKGGaNeQJdyCY0XUBDWGhg4AB\u002BuvQk7OQCRFTP1fXWmMxUMCT94ee177eu/LVQdFK31kTSJ0WgEIa0SMJ2A6QTHcF9iicQqlYpa/6zv2\u002B2HD5nuEkWR/l4udRzHZBtjGzFor1YrPR6P9WKx0MNhpN96vTuZThyLJ1AJLK/iJFFxjBanBsXIozqkWq2qev1c1Wq19063e0ZBwBNP4JaQ6WRC/i8ajQb5wWBAvnxyghpOqQPkC8L5IEEQKjgxaqOTFsCd65tb6nmlkur1\u002BxwXCgX58KfT7QptwvCK52wrSLcJvtUKOABkQ6HFXwbGsmMRBkchzpjNphLZDSrEn5G1qnsp\u002BPEtheloXouRnXDTTjhb5tXmeyg0IgzuliHp\u002By0OANbiOCDXp1IYo3mMUxBT8/mMA/8QhGH6ZzC4Zwi5ZqoQB9M3h62I/\u002B/SAQpniBmtPvdQyGeYUdgyX8pl05eIBSxmTzQYEYbc42AuJQWLGJNQEcrJG4A4BTHneSW2sqfKOyybkxXMPbAvrx3IsyLzkPJFmUcWYtDntjG6lIvnp8cvKXNIlPoFvstpJRlQPIAAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-11-30T05:05:28.951Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

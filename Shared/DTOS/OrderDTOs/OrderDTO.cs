@@ -14,7 +14,7 @@ namespace Shared.DTOS.OrderDTOs
 
         public string BasketId { get; set; } = null!;
         [Required(ErrorMessage =("Shipping Address Required"))]
-        public AddressDTO ShippingAddressDTO { get; set; } = null!;
+        public AddressDTO ShipToAddress { get; set; } = null!;
        
 
         public int DeliveryMethodId { get; set; }

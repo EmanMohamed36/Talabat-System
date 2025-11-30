@@ -12,6 +12,7 @@ namespace Shared.DTOS.IdentityDTOs
         [EmailAddress]
         public string Email { get; set; } = null!;
         public string DisplayName { get; set; } = null!;
+        public string? UserName { get; set; }
         public string Token { get; set; } = null!;
 
     }

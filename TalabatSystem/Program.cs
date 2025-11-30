@@ -11,6 +11,7 @@ using PersistenceLayer.Identity;
 using PersistenceLayer.Repositories;
 using ServiceAbstractionLayer;
 using ServiceLayer;
+using ServiceLayer.Services;
 using StackExchange.Redis;
 using System.Text;
 using TalabatSystem.CustomMiddleWares;
@@ -37,7 +38,6 @@ namespace TalabatSystem
             });
             builder.Services.AddScoped<IDataSeeding, DataSeeding>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            builder.Services.AddScoped<IServiceManager, ServiceManager>();
             builder.Services.AddAutoMapper((action) => { }, typeof(ServiceLayerAssemblyReference).Assembly);
             //builder.Services.AddAutoMapper((action) => { }, typeof(ProductProfile));
             builder.Services.AddScoped<IBasketRepository, BasketRepository>();
@@ -46,6 +46,40 @@ namespace TalabatSystem
             
             });
 
+
+            #region ServiceManagerFactory
+
+            builder.Services.AddScoped<IServiceManager,ServiceManagerWithFactoryDelegate>();
+
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<Func<IProductService>>(provider => () => provider.GetRequiredService<IProductService>());
+
+
+            builder.Services.AddScoped<IBasketService, BasketService>();
+            builder.Services.AddScoped<Func<IBasketService>>(provider => () => provider.GetRequiredService<IBasketService>());
+
+
+            builder.Services.AddScoped<IOrderService, OrderService>();
+            builder.Services.AddScoped<Func<IOrderService>>(provider => () => provider.GetRequiredService<IOrderService>());
+
+           
+            builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+            builder.Services.AddScoped<Func<IAuthenticationService>>(provider => () => provider.GetRequiredService<IAuthenticationService>());
+
+
+
+            builder.Services.AddScoped<IPaymentService, PaymentService>();
+            builder.Services.AddScoped<Func<IPaymentService>>(provider => () => provider.GetRequiredService<IPaymentService>());
+
+            #endregion
+
+
+            #region Cached 
+
+            builder.Services.AddScoped<ICacheRepository, CacheRepository>();
+            builder.Services.AddScoped<ICacheService, CacheService>();
+
+            #endregion
 
             #region Identity
             builder.Services.AddDbContext<StoreIdentityDbContext>(options =>
@@ -65,8 +99,23 @@ namespace TalabatSystem
 
             #endregion
 
+            #region AllowCors
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", builder =>
+                {
+                    builder.AllowAnyOrigin();
+                    builder.AllowAnyMethod();
+                    builder.AllowAnyHeader();
+                });
+
+            });
+
+            #endregion
+
+
             #region enable authentication ans jwt
-            // Enable Authentication + JWT
+            //  Enable Authentication +JWT
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = "Bearer";
@@ -134,6 +183,8 @@ namespace TalabatSystem
             //});
 
             app.UseStaticFiles(); //For images ,files
+
+            app.UseCors("AllowAll");
 
             app.UseHttpsRedirection();
 

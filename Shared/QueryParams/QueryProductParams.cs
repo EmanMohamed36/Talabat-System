@@ -11,8 +11,8 @@ namespace Shared.QueryParams
     {
         public int? BrandId { get; set; }
         public int? TypeId { get; set; }
-        public ProductSortingOptions sortingOptions { get; set; }
-        public string? SearchValue { get; set; }
+        public ProductSortingOptions Sort { get; set; }
+        public string? Search { get; set; }
 
         #region Pagination
 

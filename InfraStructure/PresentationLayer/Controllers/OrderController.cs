@@ -22,7 +22,7 @@ namespace PresentationLayer.Controllers
             return Ok(result);
         }
         [AllowAnonymous]
-        [HttpGet("DeliveryMethod")]
+        [HttpGet("DeliveryMethods")]
         public async Task<ActionResult<IEnumerable<DeliveryMethodDTO>>> GetAllDeliveryMethod()
         { 
             var result = await _serviceManager.OrderService.GetAllDeliveryMethodAsync();

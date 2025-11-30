@@ -16,5 +16,12 @@ namespace ServiceLayer.Specifications.OrderModuleSpecification
             AddInclude(o => o.Items);
             AddOrderBYDescending(o => o.OrderDate);
         }
+
+        public OrderSpecification(Guid Id) : base(o => o.Id == Id)
+        {
+            AddInclude(o => o.DeliveryMethod);
+            AddInclude(o => o.Items);
+            
+        }
     }
 }

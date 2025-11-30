@@ -20,6 +20,6 @@ namespace Shared.DTOS.OrderDTOs
 
         [Required(ErrorMessage = "Price Required")]
 
-        public decimal Price { get; set; }
+        public decimal Cost { get; set; }
     }
 }

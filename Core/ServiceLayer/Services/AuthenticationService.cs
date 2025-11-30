@@ -17,7 +17,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServiceLayer
+namespace ServiceLayer.Services
 {
     public class AuthenticationService(UserManager<ApplicationUser> _userManager,
                                        IConfiguration _configuration,IMapper _mapper ) 
@@ -50,16 +50,19 @@ namespace ServiceLayer
         {
             var isEmailExist = await _userManager.FindByEmailAsync(registerDTO.Email);
             if (isEmailExist is not null) throw new EmailOrPhoneAlreadyExistException("Email");
-
-            var isPhoneExist = await _userManager.Users.Include(u => u.PhoneNumber == registerDTO.PhoneNumber)
+            if (registerDTO.PhoneNumber is not null)
+            { 
+                var isPhoneExist = await _userManager.Users.Include(u => u.PhoneNumber == registerDTO.PhoneNumber)
                                                   .FirstOrDefaultAsync();
-            if(isPhoneExist is not null) throw new EmailOrPhoneAlreadyExistException("Phone");
+            
+                if(isPhoneExist is not null) throw new EmailOrPhoneAlreadyExistException("Phone");
+            }
             var user = new ApplicationUser()
             {
                 DisplayName = registerDTO.DisplayName,
                 Email = registerDTO.Email,
-                PhoneNumber = registerDTO.PhoneNumber,
-                UserName = registerDTO.UserName,
+                PhoneNumber = registerDTO.PhoneNumber ,
+                UserName = registerDTO.UserName ?? registerDTO.Email.Split("@")[0]
 
             };
             var res = await _userManager.CreateAsync(user, registerDTO.Password);
@@ -137,7 +140,7 @@ namespace ServiceLayer
                                           .FirstOrDefaultAsync()??
                                           throw new UserNotFoundException(email);
           
-            if (user.Address is null) throw new AddressNotFoundException(user.UserName!);
+           // if (user.Address is null) throw new AddressNotFoundException(user.UserName!);
             var addressDTO = _mapper.Map<AddressDTO>(user.Address);
             return addressDTO;    
         }

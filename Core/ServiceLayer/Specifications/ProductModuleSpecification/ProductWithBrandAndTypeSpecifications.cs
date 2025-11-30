@@ -15,12 +15,12 @@ namespace ServiceLayer.Specifications.ProductModuleSpecification
         public ProductWithBrandAndTypeSpecifications(QueryProductParams queryParams) 
             : base(p => (!queryParams.BrandId.HasValue ||p.BrandId == queryParams.BrandId) 
                         && (!queryParams.TypeId.HasValue || p.TypeId == queryParams.TypeId)
-                        && (string.IsNullOrWhiteSpace(queryParams.SearchValue) || p.Name.ToLower().Contains(queryParams.SearchValue )))
+                        && (string.IsNullOrWhiteSpace(queryParams.Search) || p.Name.ToLower().Contains(queryParams.Search )))
         {
             AddInclude(p => p.ProductType);
             AddInclude(p => p.ProductBrand);
 
-            switch (queryParams.sortingOptions)
+            switch (queryParams.Sort)
             {
                 case ProductSortingOptions.NameAsc:
                     AddOrderBY(p => p.Name);

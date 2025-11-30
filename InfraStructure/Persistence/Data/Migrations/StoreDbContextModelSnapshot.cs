@@ -61,6 +61,10 @@ namespace PersistenceLayer.Data.Migrations
                     b.Property<DateTimeOffset>("OrderDate")
                         .HasColumnType("datetimeoffset");
 
+                    b.Property<string>("PaymentIntentId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal>("SubTotal")
                         .HasColumnType("decimal(8,2)");
 
@@ -233,6 +237,7 @@ namespace PersistenceLayer.Data.Migrations
                                 .HasColumnType("int");
 
                             b1.Property<string>("PictureUrl")
+                                .IsRequired()
                                 .HasColumnType("nvarchar(max)");
 
                             b1.Property<int>("ProductId")

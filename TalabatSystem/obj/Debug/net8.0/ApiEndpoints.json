@@ -296,7 +296,7 @@
   {
     "ContainingType": "PresentationLayer.Controllers.OrderController",
     "Method": "GetAllDeliveryMethod",
-    "RelativePath": "api/Order/DeliveryMethod",
+    "RelativePath": "api/Order/DeliveryMethods",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -312,6 +312,42 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "PresentationLayer.Controllers.PaymentsController",
+    "Method": "CreateOrUpdatePaymentIntent",
+    "RelativePath": "api/Payments/{basketId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "basketId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Shared.DTOS.BasketDTOs.BasketDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PresentationLayer.Controllers.PaymentsController",
+    "Method": "Index",
+    "RelativePath": "api/Payments/webhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "TalabatSystem.Controllers.ProductController",
@@ -482,12 +518,12 @@
         "IsRequired": false
       },
       {
-        "Name": "sortingOptions",
+        "Name": "Sort",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "SearchValue",
+        "Name": "Search",
         "Type": "System.String",
         "IsRequired": false
       },

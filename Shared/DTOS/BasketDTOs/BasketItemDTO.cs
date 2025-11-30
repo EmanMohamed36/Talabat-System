@@ -10,7 +10,7 @@ namespace Shared.DTOS.BasketDTOs
     public class BasketItemDTO
     {
         public int Id { get; set; }
-        public string Name { get; set; } = null!;
+        public string ProductName { get; set; } = null!;
 
         public string PictureUrl { get; set; } = null!;
 
@@ -19,5 +19,8 @@ namespace Shared.DTOS.BasketDTOs
         [Range(1, int.MaxValue)]
 
         public int Quantity { get; set; }
+
+        public string? Brand { get; set; }  //from client side
+        public string? Type { get; set; }   //from client side
     }
 }

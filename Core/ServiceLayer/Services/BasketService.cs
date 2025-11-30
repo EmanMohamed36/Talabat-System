@@ -11,9 +11,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServiceLayer
+namespace ServiceLayer.Services
 {
-    internal class BasketService(IBasketRepository _basketRepository,IMapper _mapper) : IBasketService
+    public class BasketService(IBasketRepository _basketRepository,IMapper _mapper) : IBasketService
     {
         public async Task<BasketDTO> CreateOrUpdateBasketAsync(BasketDTO basket)
         {

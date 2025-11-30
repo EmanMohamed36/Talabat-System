@@ -15,20 +15,20 @@ namespace Shared.DTOS.OrderDTOs
         public Guid Id { get; set; }
 
         [Required(ErrorMessage = "User Email Required")]
-        public string UserEmail { get; set; } = null!;
+        public string BuyerEmail { get; set; } = null!;
 
         public DateTimeOffset OrderDate { get; set; } 
        
         [Required(ErrorMessage = "Order Address Required")]
-        public AddressDTO OrderAddress { get; set; } = null!;
+        public AddressDTO shipToAddress { get; set; } = null!;
 
         [Required(ErrorMessage = "Delivery Method Name Required")]
-        public string DeliveryMethodName { get; set; } = null!;
+        public string DeliveryMethod { get; set; } = null!;
         
 
         [Required(ErrorMessage = "order Status Required")]
 
-        public string orderStatus { get; set; } = null!;
+        public string Status { get; set; } = null!;
 
 
 
@@ -38,5 +38,7 @@ namespace Shared.DTOS.OrderDTOs
 
       
         public decimal Total {  get; set; }
+
+        public decimal? DeliveryCost { get; set; } // client side
     }
 }

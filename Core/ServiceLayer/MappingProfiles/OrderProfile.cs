@@ -16,17 +16,23 @@ namespace ServiceLayer.MappingProfiles
         {
             CreateMap<AddressDTO, ShippingAddress>().ReverseMap();
             CreateMap<Order, OrderToReturnDTO>()
-                                               .ForMember(dist => dist.orderStatus
+                                               .ForMember(dist => dist.Status
                                                ,option => option.MapFrom(src => src.orderStatus.ToString()))
-                                               .ForMember(dist => dist.DeliveryMethodName
+                                               .ForMember(dist => dist.DeliveryMethod
                                                , option => option.MapFrom(src => src.DeliveryMethod.ShortName))
+                                               .ForMember(dist => dist.BuyerEmail
+                                               , option => option.MapFrom(src => src.UserEmail))
+                                               .ForMember(dist => dist.shipToAddress
+                                               , option => option.MapFrom(src => src.OrderAddress))
                                                .ReverseMap();
 
             CreateMap<OrderItem, OrderItemDTO>().ForMember(dist => dist.ProductName, option => option.MapFrom(src => src.productItemOrdered.ProductName))
                                                 .ForMember(dist => dist.PictureUrl, option => option.MapFrom<OrderItemPictureUrlResolver>())
                                                 .ReverseMap();
 
-            CreateMap<DeliveryMethod, DeliveryMethodDTO>().ReverseMap();
+            CreateMap<DeliveryMethod, DeliveryMethodDTO>()
+                                                    .ForMember(dist => dist.Cost , opt => opt.MapFrom(src => src.Price))    
+                                                    .ReverseMap();
         }
     }
 }

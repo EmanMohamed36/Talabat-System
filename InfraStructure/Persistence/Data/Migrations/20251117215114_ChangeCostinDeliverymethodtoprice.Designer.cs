@@ -67,11 +67,11 @@ namespace PersistenceLayer.Data.Migrations
                     b.Property<decimal>("SubTotal")
                         .HasColumnType("decimal(8,2)");
 
-                    b.Property<string>("UserEmail")
+                    b.Property<string>("BuyerEmail")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("orderStatus")
+                    b.Property<int>("Status")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -185,7 +185,7 @@ namespace PersistenceLayer.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.OwnsOne("DomainLayer.Models.OrderModels.ShippingAddress", "OrderAddress", b1 =>
+                    b.OwnsOne("DomainLayer.Models.OrderModels.ShipToAddress", "shipToAddress", b1 =>
                         {
                             b1.Property<Guid>("OrderId")
                                 .HasColumnType("uniqueidentifier");
@@ -220,7 +220,7 @@ namespace PersistenceLayer.Data.Migrations
 
                     b.Navigation("DeliveryMethod");
 
-                    b.Navigation("OrderAddress")
+                    b.Navigation("shipToAddress")
                         .IsRequired();
                 });
 

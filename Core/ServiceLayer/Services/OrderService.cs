@@ -16,9 +16,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServiceLayer
+namespace ServiceLayer.Services
 {
-    internal class OrderService(IUnitOfWork _unitOfWork,
+    public class OrderService(IUnitOfWork _unitOfWork,
                                 IMapper _mapper,
                                 IBasketRepository _basketRepository
                                 
@@ -29,12 +29,19 @@ namespace ServiceLayer
 
         {
             //Basket Id , Address DTO , DeliveryMethodId customer email
-            var orderAddress = _mapper.Map<ShippingAddress>(orderDTO.ShippingAddressDTO);
+            var orderAddress = _mapper.Map<ShippingAddress>(orderDTO.ShipToAddress);
 
 
             var basket = await _basketRepository.GetBasketAsync(orderDTO.BasketId)
                                                 ?? throw new BasketNotFoundException(orderDTO.BasketId);
 
+            ArgumentNullException.ThrowIfNull(basket.PaymentIntentId);
+
+            var OrderRepo = _unitOfWork.GetRepository<Order, Guid>();
+            var OrderSpec = new OrderWithPaymentIntentSpecification(basket.PaymentIntentId);
+            var ExistingOrder =  await OrderRepo.GetByIdAsync(OrderSpec);
+
+            if (ExistingOrder is not null) OrderRepo.Remove(ExistingOrder);
 
             var ProductRepo =  _unitOfWork.GetRepository<Product, int>();
             List<OrderItem> OrderItems = [];
@@ -62,9 +69,9 @@ namespace ServiceLayer
 
             var subTotal = OrderItems.Sum(i => i.Quantity * i.Price);
 
-            var order = new Order(email,orderAddress, DeliveryMethod,orderDTO.DeliveryMethodId,OrderItems, subTotal);
+            var order = new Order(email,orderAddress, DeliveryMethod,orderDTO.DeliveryMethodId,OrderItems, subTotal,basket.PaymentIntentId);
 
-            await _unitOfWork.GetRepository<Order, Guid>().AddAsync(order);
+            await OrderRepo.AddAsync(order);
             await _unitOfWork.SaveChangesAsync();
             return _mapper.Map<OrderToReturnDTO>(order);
         }
@@ -86,8 +93,8 @@ namespace ServiceLayer
 
         public async Task<OrderToReturnDTO> GetOrderByIdToSpecificUserAsync(Guid orderId, string email)
         {
-
-            var order = await _unitOfWork.GetRepository<Order,Guid>().GetByIdAsync(orderId)
+            var spec = new OrderSpecification(orderId);
+            var order = await _unitOfWork.GetRepository<Order,Guid>().GetByIdAsync(spec)
                         ?? throw new OrderNotFoundException(orderId);
 
             if (order.UserEmail != email) throw new GetOrderByIdException(email);

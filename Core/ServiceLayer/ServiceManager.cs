@@ -4,6 +4,7 @@ using DomainLayer.Models.IdentityModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using ServiceAbstractionLayer;
+using ServiceLayer.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace ServiceLayer
                                 UserManager<ApplicationUser> _userManager,
                                 IConfiguration _configuration) 
                                 
-        : IServiceManager
+        //: IServiceManager
     {
         private readonly Lazy<IProductService> _lazyProductService
                 = new Lazy<IProductService> (() => new ProductService(_unitOfWork, _mapper));
