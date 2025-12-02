@@ -2,8 +2,8 @@
 
 ## Table of Contents 📚
 - [About](#about-)
-- [Technologies](#technologies-)
-- [Architecture](#architecture-)
+- [Technologies](#Technologies-)
+- [Architecture](#Architecture-)
 - [ProductionDeployment](#ProductionDeployment-)
 - [APIUsage](#APIUsage-)
 - [AngularRepo](#AngularRepo-)
