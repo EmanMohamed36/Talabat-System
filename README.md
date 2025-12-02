@@ -1,12 +1,13 @@
 # Talabat System 🍔
 
 ## Table of Contents 📚
-- [About](#about)
-- [Architecture](#architecture)
-- [ProductionDeployment](#ProductionDeployment)
-- [APIUsage](#APIUsage)
-- [Technologies](#technologies)
-- [Demo](#demo)
+- [About](#about-)
+- [Technologies](#technologies-)
+- [Architecture](#architecture-)
+- [ProductionDeployment](#ProductionDeployment-)
+- [APIUsage](#APIUsage-)
+- [AngularRepo](#AngularRepo-)
+- [Demo](#demo-)
 
 
 
@@ -70,7 +71,7 @@ The backend uses **ASP.NET Core** with **Onion Architecture**:
   - GET {{BaseUrl}}/api/Products?BrandId=1&sortingOptions=PriceDesc&TypeId=3&SearchValue=Tandoori&PageSize=5&PageIndex=2
   - GET {{BaseUrl}}/api/Products/12
 
-## [Angular Repo](https://github.com/EmanMohamed36/ClientSide-Of-TalabatSystem) 
+## [AngularRepo](https://github.com/EmanMohamed36/ClientSide-Of-TalabatSystem) 💻
 
 ## Demo 🎬 
 ![Talabat System Demo](https://github.com/EmanMohamed36/Talabat-System/blob/main/TalabatVedio-ezgif.com-video-to-gif-converter%20(1).gif)  
